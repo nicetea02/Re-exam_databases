@@ -1,0 +1,8 @@
+mysql> select sum(seq_region_end-seq_region_start+1) as size, gene_name from gene group by gene_name order by size desc limit 1 offset 2;
+
+
++---------+-----------+
+| size    | gene_name |
++---------+-----------+
+| 2493040 | PARP1     |
++---------+-----------+
