@@ -1,0 +1,1 @@
+db.exam.find({"drug":1},{$or:[{"method_of_admission":"spray"},{"method_of_admission":"nasal"}]})
