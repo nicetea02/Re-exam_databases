@@ -1,0 +1,10 @@
+First searching on which chromosome and what position the MALAT1 in mus musculus is located: http://www.ensembl.org/Mus_musculus/Gene/Summary?db=core;g=ENSMUSG00000092341;r=19:5795690-5802672
+
+We notice that the sequence for the MALAT1 gene starts at 5795690 bp, add 100 to this number and use it in our query.
+
+Next we write our curl request through the URL by : https://rest.ensembl.org/sequence/region/mouse/19:5795690..5795790?content-type=fasta
+
+With the outcome of fastaformat:
+>chromosome:GRCm38:19:5795690:5795790:1
+TGAGAGATATTTAGTTTTTATTTCATAAAATCAAAGTATTCAATAAATAGTAGGAGGTGT
+GTCGACTCAGAGGTAATAAGACGAATTGGGCATAACCTGAA
