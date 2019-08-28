@@ -1,0 +1,15 @@
+mysql> select count(*), chromosome from gene where description like "%breast cancer%" group by chromosome order by count(*) desc limit 1;
++----------+------------+
+| count(*) | chromosome |
++----------+------------+
+|        2 | 16         |
++----------+------------+
+
+
+mysql> select count(*) from gene join transcript on gene.gene_id=transcript.gene_id where gene.chromosome=16;
++----------+
+| count(*) |
++----------+
+|     3636 |
++----------+
+
